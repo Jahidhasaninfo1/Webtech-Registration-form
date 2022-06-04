@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body style="background-color: powderblue;">
+        <title>Registration form</title>
+        <h2 style="text-align:center;">Registration form</h2>
+    <form action="labtask1.php" method="post" autocomplete="off" target="_blank" novalidate>
+        <fieldset>
+            <legend style="text-align: center; color: blue; font-size: 30px;">General</legend>
+            <label for="fname">First Name</label>
+            <input type="text", id="fname" name="fname"> <br><br>
+            <label for="lname">Last Name</label>
+            <input type="text", id="lname" name="lname"> <br><br>
+            <label for="gender">Gender</label>
+            <input type="radio" id="Male" name="gender" value="male">Male
+            <input type="radio" id="Female" name="gender" value="female">Female
+            <br><br>            
+        </fieldset>
+        <fieldset>
+            <legend style="text-align: center; color:blue; font-size: 30px">Contact</legend>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"> <br><br>
+            <label for="mob">Mobile No</label>
+            <input type="number" id="mobNo" name="mob"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend style="text-align: center; color:blue; font-size: 30px">Address</legend>
+            <label for="address">Street/Home/Road</label>
+            <input type="text" id="address" name="address"> <br><br>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="bd">Bangladesh</option>
+                <option value="india">India</option>
+                <option value="singapur">Singapur</option>
+                <option value="usa">United States of America</option>
+                <option value="uk">United Kingdom</option>        
+            </select>
+            <br><br>
+            <label for="profile">Upload your profile</label>
+            <input type="file" id="file" name="profile">
+        </fieldset>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+    </body>
+</html>
